@@ -1,6 +1,6 @@
 # Application
 run:
-	go run cmd/api/main.go
+	uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 # Docker services
 LOCAL_DOCKER_COMPOSE_PROJECT_NAME=auth_services_local
